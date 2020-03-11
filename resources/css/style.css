@@ -7,6 +7,10 @@ body {
 
     color: #777777;
 }
+
+img {
+    max-width: 100%;
+}
 /* headings and type */
 
 h1 {
@@ -29,6 +33,13 @@ h1 {
         }
     
 /* layouts */
+.content {
+    background-color: 
+
+    max-width: 1000px
+    margin-left: auto;
+    margin-right: auto;
+}
 /* header */
 /* navigation */
 /* footer */
