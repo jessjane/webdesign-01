@@ -16,12 +16,14 @@ h1 {
     
      h2 {
          font-size: 50;
+         color: #e9b49f;
      }
     
      h3 {
          font-size: 35;
+         color: #edc444
      }
-     
+
      p {
         color: grey;
         }
