@@ -1,23 +1,38 @@
+/* variables */
+/* global defaults*/
+
 body {
     background-color: #f1f1f1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     color: #777777;
 }
- h1 {
-font-size: 70px;
-color: #b09175; 
- }
+/* headings and type */
 
- h2 {
-     font-size: 50;
- }
+h1 {
+    font-size: 70px;
+    color: #b09175; 
+     }
+    
+     h2 {
+         font-size: 50;
+     }
+    
+     h3 {
+         font-size: 35;
+     }
+     
+     p {
+        color: grey;
+        }
+    
+/* layouts */
+/* header */
+/* navigation */
+/* footer */
+/* modules */
 
- h3 {
-     font-size: 35;
- }
 
 
- p {
-color: grey;
-}
+ 
+
