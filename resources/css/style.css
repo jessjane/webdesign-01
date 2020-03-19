@@ -41,15 +41,30 @@ h1 {
 /* layouts */
 
 .content {
-    background-color: blue
 
-    max-width: 1000px
+
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+
+    padding-left: 3%;
+    padding-right: 3%;
 }
 /* header */
+
+header{
+    background-color: pink;
+}
 /* navigation */
 /* footer */
+
+footer {
+    background-color: pink;
+}
+    
+
+
+
 /* modules */
 
 
