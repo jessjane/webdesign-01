@@ -39,6 +39,10 @@ h1 {
         color: #b09175;
           
         }
+
+        .emphasised-text {
+            font-style: italic;
+        }
     
 /* layouts */
 
@@ -104,6 +108,20 @@ footer {
 
 
 /* modules */
+
+.news-component {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    padding: 3%;
+
+}
+
+.news-component h2 {
+    color: red;
+}
+
 
 
 
