@@ -1,8 +1,17 @@
 /* variables */
+
+:root {
+    --main-bg-color: #f1f1f1;
+    --vertical-spacer: 20px;
+    --padder: 3%;
+
+    
+
+}
 /* global defaults*/
 
 body {
-    background-color: white;
+    background-color: var(--main-bg-color)
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     color: #777777;
@@ -114,9 +123,9 @@ footer {
     border-style: solid;
     border-color: black;
 
-    padding: 3%;
+    padding: var(--padder);
 
-    margin-bottom: 20px;
+    margin-bottom: var(--vertical-spacer);
 
     overflow: hidden;
 
