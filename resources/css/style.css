@@ -143,5 +143,21 @@ margin-right: 20px;
     margin-right: 0;
 }
 
+.news-component-image-only {
+    display: flex;
+    justify-content: center;     
+}
+
+.news-component-image-only img {
+    margin-right: 0
+    float: none;
+}
+
+.news-component-columns {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
  
  
