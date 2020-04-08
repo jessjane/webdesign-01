@@ -2,7 +2,8 @@
 
 :root {
     --main-bg-color: #f1f1f1;
-    --alternate-bg-color: ;
+    --alternate-bg-color: #B09175;
+
 
     --vertical-spacer: 20px;
     --padder: 3%;
@@ -164,12 +165,24 @@ header h1 {
 }
 /* navigation */
 
-nav {
-    position: sticky;
-    top: 0;
+.navigation {
+   /*  position: sticky;
+    top: 0; */
+
+    background-color: var(--alternate-bg-color);
 }
 
-/* footer */
+.navigation.content{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+
 
 /* buttons */
 
@@ -181,8 +194,15 @@ nav {
 
 }
 
+/* footer */
 footer {
+
+    padding-top: var(--vertical-spacer);
+    padding-bottom: var(--vertical-spacer);
     background-color: #b09175;
+    text-align: center;
+color: #fff;
+
 }
     
 
