@@ -67,9 +67,15 @@ color: #b09175;
 
 .imagecontainer {
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+
+
+    /*  have updated this as I *think* this is what you're after*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 /* working on putting images in, need to have another look at alignment */
