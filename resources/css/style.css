@@ -82,10 +82,11 @@ color: #b09175;
 
 .imagecontainer img {
 
-    object-fit: cover;
+    /* Jess - I commented this out as it was breaking the layout */
 
+    /* object-fit: cover;
     width: 30%;
-    height: 5%;
+    height: 5%; */
 }
 
 .content {
