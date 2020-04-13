@@ -42,26 +42,26 @@ h3 {
 h1 {
     font-size: 70px;
     color: #b09175; 
-     }
+}
     
-     h2 {
-         font-size: 50;
-         color:#b09175;
-     }
+h2 {
+    font-size: 50;
+    color:#b09175;
+}
+
+h3 {
+    font-size: 35;
+    color: #edc444
+}
+
+p {
+color: #b09175;
     
-     h3 {
-         font-size: 35;
-         color: #edc444
-     }
+}
 
-     p {
-        color: #b09175;
-          
-        }
-
-        .emphasised-text {
-            font-style: italic;
-        }
+.emphasised-text {
+    font-style: italic;
+}
     
 /* layouts */
 
@@ -104,8 +104,7 @@ h1 {
 
 /* my previous background colour was b09175 */
 
-header
-{    
+header {    
     
     background-color: white;
 
@@ -222,7 +221,11 @@ footer {
 
 
 }
+/* you'd set a color on p, which overrides this so have made this more specific- CSS can get confusing with what overides what.
 
+See this for explanation:  https://bit.ly/2V4ODL9
+
+*/
 footer p {
     color: var(--main-bg-color);
 }
