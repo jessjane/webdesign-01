@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background-color: var(--main-bg-color)
+    background-color: var(--main-bg-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
     color: #777777;
@@ -108,11 +108,15 @@ header
 {    
     
     background-color: white;
+
     padding-top: 250px;
     padding-bottom: 205px;
 
     text-align: center;
-    color: #f1f1f1
+    /* color: #f1f1f1; */
+
+    /* Hi Jess - have made this your header colour so you can read it now.  It was really light text on a */
+    color: #b09175;
 }
 
 header a {
@@ -170,12 +174,26 @@ header h1 {
     top: 0; */
 
     background-color: var(--alternate-bg-color);
+    
 }
 
-.navigation.content{
+.navigation .content{
     margin-top: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.navigation a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
 }
 
 
