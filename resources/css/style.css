@@ -219,8 +219,12 @@ footer {
     padding-bottom: var(--vertical-spacer);
     background-color: #b09175;
     text-align: center;
-color: #fff;
 
+
+}
+
+footer p {
+    color: var(--main-bg-color);
 }
     
 
