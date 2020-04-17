@@ -307,5 +307,25 @@ margin-right: 20px;
 
 /* image gallery */
 
+.gallery {
 
- 
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.gallery-images img {
+    width:100%;
+}
+
+@media screen and (min-width:800px) {
+
+.gallery-images {
+grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
