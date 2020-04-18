@@ -118,8 +118,8 @@ header {
     background-color: white;
 
 
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 
     text-align: center;
     /* color: #f1f1f1; */
@@ -132,13 +132,9 @@ header a {
     text-decoration: none;
 }
 
-.header-logo img {
-    max-width: 100px;
-}
 
-.header-heading {
-    font-size: 32px;
-}
+
+
 
 .header-sub-heading {
     font-size: 50px;
@@ -152,7 +148,7 @@ text-align: left;
     }
 
     .header-heading {
-        font-size: 80px;
+        font-size: 60px;
     }
    
     .header-logo img {
@@ -261,7 +257,7 @@ footer p {
 }
 
 .news-component h2 {
-    color: red;
+    color: #b09175;
 }
 
 .news-component img {
@@ -286,7 +282,7 @@ margin-right: 20px;
 }
 
 .news-component-image-only img {
-    margin-right: 0
+    margin-right: 0;
     float: none;
 }
 
@@ -327,5 +323,3 @@ margin-right: 20px;
 grid-template-columns: 1fr 1fr 1fr;
 
 }
-
-
