@@ -21,9 +21,16 @@ html {
 }
 
 body {
+    
     background-color: var(--main-bg-color);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url();
 
+    background-position: center;
+    background-size: cover;
+}
+
+   { 
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #777777;
     box-sizing: border-box;
 }
@@ -156,7 +163,7 @@ text-align: left;
     }
     header .content {
         display: grid;
-        grid-template-columns: ;
+        grid-template-columns: center ;
     }
     .header-text {
 
