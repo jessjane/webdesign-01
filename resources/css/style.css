@@ -1,239 +1,217 @@
 /* variables */
 
 :root {
-    --main-bg-color: #f1f1f1;
-    --alternate-bg-color: #B09175;
+  --main-bg-color: #f1f1f1;
+  --alternate-bg-color: #b09175;
 
+  --vertical-spacer: 20px;
+  --padder: 3%;
 
-    --vertical-spacer: 20px;
-    --padder: 3%;
-    
-    scroll-behavior: smooth;
-
-
-    
-
+  scroll-behavior: smooth;
 }
 /* global defaults*/
 
 html {
-
 }
 
 body {
-    
-    background-color: var(--main-bg-color);
-    background-image: url();
+  background-color: var(--main-bg-color);
+  /* background-image: url(../); */
 
-    background-position: center;
-    background-size: cover;
+  background-position: center;
+  background-size: cover;
 }
 
-   { 
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #777777;
-    box-sizing: border-box;
+ {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #777777;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 /* headings and type */
 
 h1,
 h2,
 h3 {
-    font-family: 'Playfair Display', serif;  
+  font-family: "Playfair Display", serif;
 }
 
 h1 {
-    font-size: 70px;
-    color: #b09175; 
+  font-size: 70px;
+  color: #b09175;
 }
-    
+
 h2 {
-    font-size: 50;
-    color:#b09175;
+  font-size: 50;
+  color: #b09175;
 }
 
 h3 {
-    font-size: 35;
-    color: #edc444
+  font-size: 35;
+  color: #edc444;
 }
 
 p {
-color: #b09175;
-    
+  color: #b09175;
 }
 
 .emphasised-text {
-    font-style: italic;
+  font-style: italic;
 }
-    
+
 /* layouts */
 
 .imagecontainer {
-
-    /* display: flex;
+  /* display: flex;
     justify-content: center;
     align-items: center; */
 
-
-    /*  have updated this as I *think* this is what you're after*/
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+  /*  have updated this as I *think* this is what you're after*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* working on putting images in, need to have another look at alignment */
 
 .imagecontainer img {
+  /* Jess - I commented this out as it was breaking the layout */
 
-    /* Jess - I commented this out as it was breaking the layout */
-
-    /* object-fit: cover;
+  /* object-fit: cover;
     width: 30%;
     height: 5%; */
 }
 
 .content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 
-
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-left: 5%;
-    padding-right: 5%;
-
-
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .border {
-
-
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 /* header */
 
 /* my previous background colour was b09175 */
 
-header {    
-    
-   
-    background-color: white;
+header {
+  background-color: white;
 
+  padding-top: 70px;
+  padding-bottom: 70px;
 
-    padding-top: 70px;
-    padding-bottom: 70px;
+  text-align: center;
+  /* color: #f1f1f1; */
 
-    text-align: center;
-    /* color: #f1f1f1; */
+  /* Hi Jess - have made this your header colour so you can read it now.  It was really light text on a */
+  color: #b09175;
+}
 
-    /* Hi Jess - have made this your header colour so you can read it now.  It was really light text on a */
-    color: #b09175;
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-image {
+  width: 100%;
+  height: 300px;
+  background-image: url("../Images/landscape.JPG");
+  background-position: center;
+  background-size: cover;
 }
 
 header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
-
-
-
 .header-sub-heading {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 @media screen and (min-width: 800px) {
+  header {
+    text-align: left;
+  }
 
-    header {
-text-align: left;
+  .header-heading {
+    font-size: 60px;
+  }
 
-    }
-
-    .header-heading {
-        font-size: 60px;
-    }
-   
-    .header-logo img {
-        max-width: 200px;
-    }
-    header .content {
-        display: grid;
-        grid-template-columns: center ;
-    }
-    .header-text {
-
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        letter-spacing: 5px;
-        
-    }
+  .header-logo img {
+    max-width: 200px;
+  }
+  header .content {
+    display: grid;
+    grid-template-columns: center;
+  }
+  .header-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 5px;
+    padding: 30px;
+  }
 }
 
 header h1 {
-    margin-top: 0;
-    text-align: center
+  margin-top: 0;
+  text-align: center;
 }
 /* navigation */
 
 .navigation {
-   /*  position: sticky;
+  /*  position: sticky;
     top: 0; */
 
-    background-color: var(--alternate-bg-color);
-    
+  background-color: var(--alternate-bg-color);
 }
 
-.navigation .content{
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 20px 0;
+.navigation .content {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0;
 }
 
 .navigation a {
-    color: var(--main-bg-color);
-    text-decoration: none;
+  color: var(--main-bg-color);
+  text-decoration: none;
 }
 
 .navigation a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-
-
-
-
+ul.content {
+  margin-bottom: 0;
+}
 
 /* buttons */
 
 .back-top a {
-
-    background-color: var(--alternate-bg-color);
-    color: var(--main-bg-color);
-    padding:var(--padder)
-
+  background-color: var(--alternate-bg-color);
+  color: var(--main-bg-color);
+  padding: var(--padder);
 }
 
 /* footer */
 footer {
-
-    padding-top: var(--vertical-spacer);
-    padding-bottom: var(--vertical-spacer);
-    background-color: #b09175;
-    text-align: center;
-
-
+  padding-top: var(--vertical-spacer);
+  padding-bottom: var(--vertical-spacer);
+  background-color: #b09175;
+  text-align: center;
 }
 /* you'd set a color on p, which overrides this so have made this more specific- CSS can get confusing with what overides what.
 
@@ -241,92 +219,84 @@ See this for explanation:  https://bit.ly/2V4ODL9
 
 */
 footer p {
-    color: var(--main-bg-color);
+  color: var(--main-bg-color);
 }
-    
-
-
 
 /* modules */
 
 .news-component {
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 
-    padding: var(--padder);
+  padding: var(--padder);
 
-    margin-bottom: var(--vertical-spacer);
+  margin-bottom: var(--vertical-spacer);
 
-    overflow: hidden;
-
-
+  overflow: hidden;
 }
 
 .news-component h2 {
-    color: #b09175;
+  color: #b09175;
 }
 
 .news-component img {
-float: left;
-margin-right: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
-
 .news-component-offset {
-    background-color: #999;
+  background-color: #999;
 }
 
 .news-component-offset img {
-    float: right;
-    margin-left: 20px;
-    margin-right: 0;
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
 }
 
 .news-component-image-only {
-    display: flex;
-    justify-content: center;     
+  display: flex;
+  justify-content: center;
 }
 
 .news-component-image-only img {
-    margin-right: 0;
-    float: none;
+  margin-right: 0;
+  float: none;
 }
 
 .news-component-columns {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
 }
- 
-@media-screen and (min-width: 800px)
 
-.news-component-columns{
+@media-screen and (min-width: 800px) {
+  .news-component-columns {
     grid-template-columns: 1fr 1fr;
-    background-color: 
+  }
 }
-
 
 /* image gallery */
 
-.gallery {
-
-}
-
 .gallery-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .gallery-images img {
-    width:100%;
+  width: 100%;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 800px) {
+  .gallery-images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
-.gallery-images {
-grid-template-columns: 1fr 1fr 1fr;
-
+@media screen and (max-width: 800px) {
+  .header-logo {
+    display: none;
+  }
 }
