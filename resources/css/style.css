@@ -210,7 +210,6 @@ ul.content {
 
 .cta-card {
     position: relative;
-    background-image: url(https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80);
     width: 22%;
     display: flex;
     justify-content: center;
@@ -234,7 +233,15 @@ ul.content {
 }
 
 .cta-card-1 {
-    /* add background image here  */
+    background-image: url(../galleries/sarah.jpg);
+}
+
+.cta-card-2 {
+    background-image: url(../Images/iconic\ brown.JPG);
+}
+
+.cta-card-3 {
+    background-image: url(https://images.unsplash.com/photo-1568673818074-fb36bbd0ff30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);
 }
 
 .cta-link {
